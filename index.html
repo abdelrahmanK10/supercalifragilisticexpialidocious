@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mental Health Presentation</title>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk20cx5SjmEjXh2mudaH_xj-xKlBD4KlRNiQ&s"
+    type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+
+  <div id="loading-screen" role="status" aria-label="Loading presentation">
+    <p class="loading-label">Something amazing is coming &hellip;</p>
+    <div class="progress-track" aria-hidden="true">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <p class="progress-pct" id="progress-pct" aria-live="polite">0%</p>
+  </div>
+
+
+  <nav id="dot-nav" aria-label="Section navigation">
+  </nav>
+
+  <main class="page-content">
+    <section id="intro" class="full-section" data-nav-label="Intro">
+      <div class="intro-inner">
+        <p class="intro-pre reveal"
+          style="color: white; font-size: clamp(30px, 6vw, 50px); font-family: 'Courier New', Courier, monospace;">
+          Question</p>
+        <p class="intro-sub reveal delay-3" style="font-size: clamp(16px, 3.5vw, 25px); color: rgb(195, 195, 195);">Do you really think you're fine, <span style="font-weight: bold;">MENTALLY ?</span></p>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+        scroll
+      </div>
+    </section>
+    <section id="intro" class="full-section" data-nav-label="Intro">
+      <div class="intro-inner">
+        <p class="intro-pre reveal">A presentation on mental health</p>
+        <h1 class="intro-headline reveal delay-2">
+          <em id="typed-name"></em>
+        </h1>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+        scroll
+      </div>
+    </section>
+
+
+    <section id="disorder-1" class="full-section disorder-section" data-nav-label="GAD">
+      <div class="disorder-inner">
+        <div class="disorder-text">
+          <p class="disorder-index reveal">01</p>
+          <h2 class="disorder-title reveal delay-1">Generalized<br />Anxiety Disorder</h2>
+          <span class="disorder-abbr reveal delay-2">GAD</span>
+          <p class="disorder-desc reveal delay-2">
+            Generalized Anxiety Disorder, or GAD, is when a person feels worried all the time about normal, everyday things, even when there's no clear reason. This worry is hard to stop and can affect sleep, focus, and daily life. Anxiety itself is normal. It's the body's natural reaction to stress or danger. It helps us get ready to act quickly. But with GAD, this feeling happens most of the time, even when nothing is wrong. So the person feels nervous and tense almost all the time. This can be caused by stress, difficult experiences, or long periods of pressure.
+          </p>
+        </div>
+        <div class="disorder-visual reveal-scale delay-2">
+          <div class="disorder-img-wrap">
+            <img src="GAD1.png"
+              alt="Generalized Anxiety Disorder illustration" />
+          </div>
+          <p class="img-caption">Generalized Anxiety Disorder</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="disorder-1" class="full-section disorder-section" data-nav-label="GAD">
+      <div class="disorder-inner">
+        <div class="disorder-text">
+          <p class="disorder-index reveal">1.5</p>
+          <h2 class="disorder-title reveal delay-1">Generalized<br />Anxiety Disorder</h2>
+          <span class="disorder-abbr reveal delay-2">GAD Symptoms</span>
+          <p class="disorder-desc reveal delay-2">
+            People with GAD may have symptoms like too much thinking, trouble sleeping, fast heartbeat, feeling dizzy, being tired, and sometimes pain like headaches or stomachache.
+          </p>
+        </div>
+        <div class="disorder-visual reveal-scale delay-2">
+          <div class="disorder-img-wrap">
+            <img src="https://cdn.discordapp.com/attachments/1442424846716899378/1499230569429602384/image.png?ex=69f40ac6&is=69f2b946&hm=5440da6b3d47322085d66104337984c36c898c9a4780b853fae83d613adef6c4&"
+              alt="Generalized Anxiety Disorder illustration" />
+          </div>
+          <p class="img-caption">Generalized Anxiety Disorder</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="disorder-2" class="full-section disorder-section" data-nav-label="MDD">
+      <div class="disorder-inner">
+        <div class="disorder-text">
+          <p class="disorder-index reveal">02</p>
+          <h2 class="disorder-title reveal delay-1">Major Depressive<br />Disorder</h2>
+          <span class="disorder-abbr reveal delay-2">MDD</span>
+          <p class="disorder-desc reveal delay-2">
+            AD doesn't just cause anxiety it can also lead to depression. Half of GAD patients end up dealing with both conditions together, which is called Comorbidity. On top of that, the constant worry pushes people to isolate themselves from others, known as Social Withdrawal.
+          </p>
+        </div>
+        <div class="disorder-visual reveal-scale delay-2">
+          <div class="disorder-img-wrap">
+            <img src="https://cdn.discordapp.com/attachments/1442424846716899378/1499231359099473960/gaa.png?ex=69f40b82&is=69f2ba02&hm=e52071a872aaddd6d65252614dcfccec5584876493eb19c430932372904a69b6&"
+              alt="Major Depressive Disorder illustration" />
+          </div>
+          <p class="img-caption">Major Depressive Disorder</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="disorder-2" class="full-section disorder-section" data-nav-label="MDD">
+      <div class="disorder-inner">
+        <div class="disorder-text">
+          <p class="disorder-index reveal">2.3</p>
+          <h2 class="disorder-title reveal delay-1">Major Depressive<br />Disorder</h2>
+          <span class="disorder-abbr reveal delay-2">What is MDD?</span>
+          <p class="disorder-desc reveal delay-2">
+            Depression is more than just feeling sad. It's a long-lasting condition that drains your energy and affects every part of your life, from sleeping and eating to focusing and working. People with depression often feel empty, hopeless, and irritable even over small things, unlike normal sadness which fades on its own.
+          </p>
+        </div>
+        <div class="disorder-visual reveal-scale delay-2">
+          <div class="disorder-img-wrap">
+            <img src="https://cdn.discordapp.com/attachments/1442424846716899378/1499234292344033470/image.png?ex=69f40e3d&is=69f2bcbd&hm=dfdba06f9482718fa96333e6d6f6d9db48b817a01b70c811a27193ec3dc219b5&"
+              alt="Major Depressive Disorder illustration" />
+          </div>
+          <p class="img-caption">Major Depressive Disorder</p>
+        </div>
+      </div>
+    </section>
+        <section id="disorder-2" class="full-section disorder-section" data-nav-label="MDD">
+      <div class="disorder-inner">
+        <div class="disorder-text">
+          <p class="disorder-index reveal">2.6</p>
+          <h2 class="disorder-title reveal delay-1">Major Depressive<br />Disorder</h2>
+          <span class="disorder-abbr reveal delay-2">MDD Treatment</span>
+          <p class="disorder-desc reveal delay-2">
+            Depression is more than just feeling sad. It's a long-lasting condition that drains your energy and affects every part of your life, from sleeping and eating to focusing and working. People with depression often feel empty, hopeless, and irritable even over small things, unlike normal sadness which fades on its own.
+          </p>
+        </div>
+        <div class="disorder-visual reveal-scale delay-2">
+          <div class="disorder-img-wrap">
+            <img src="https://cdn.discordapp.com/attachments/1442424846716899378/1499234145442992218/Gemini_Generated_Image_49nr6649nr6649nr.png?ex=69f40e1a&is=69f2bc9a&hm=1fcc59ed2b960037c622ac35dd6f44c00fbd8839ba287a0ab687799f9737f478&"
+              alt="Major Depressive Disorder illustration" />
+          </div>
+          <p class="img-caption">Major Depressive Disorder</p>
+        </div>
+      </div>
+    </section>
+
+           <section id="disorder-2" class="full-section disorder-section" data-nav-label="MDD">
+      <div class="disorder-inner">
+        <div class="disorder-text">
+          <p class="disorder-index reveal">03</p>
+          <h2 class="disorder-title reveal delay-1">Social Anxiety<br />Disorder</h2>
+          <span class="disorder-abbr reveal delay-2">What is SAD?</span>
+          <p class="disorder-desc reveal delay-2">
+            Social Anxiety Disorder is a mental health condition where a person has a strong fear of being judged or embarrassed in social situations. It goes beyond normal shyness and can seriously impact school, work, and relationships.
+          </p>
+        </div>
+        <div class="disorder-visual reveal-scale delay-2">
+          <div class="disorder-img-wrap">
+            <img src="https://i.pinimg.com/736x/f3/bb/2e/f3bb2edc629f7b2fd3a306523b5dee83.jpg"
+              alt="Social Anxiety illustration" />
+          </div>
+          <p class="img-caption">Social Anxiety Disorder</p>
+        </div>
+      </div>
+    </section>
+
+
+           <section id="disorder-2" class="full-section disorder-section" data-nav-label="MDD">
+      <div class="disorder-inner">
+        <div class="disorder-text">
+          <p class="disorder-index reveal">3.5</p>
+          <h2 class="disorder-title reveal delay-1">Social Anxiety<br />Disorder</h2>
+          <span class="disorder-abbr reveal delay-2">Symptoms, Effects & How to Face It</span>
+          <p class="disorder-desc reveal delay-2">
+            People with social anxiety feel strong fear before social events and overthink them after. They may experience physical symptoms like sweating, shaking, or a fast heartbeat. Over time, avoiding these situations lowers their confidence and affects daily life. However, facing fears gradually by taking small steps into social situations helps the mind get used to them, making fear weaker and confidence stronger.
+          </p>
+        </div>
+        <div class="disorder-visual reveal-scale delay-2">
+          <div class="disorder-img-wrap">
+            <img src="https://cdn.discordapp.com/attachments/1442424846716899378/1499237372280180777/image.png?ex=69f4111c&is=69f2bf9c&hm=0aee5a2142991d164498b89dba59d2ce152871c34378030e67e0b2edee36eb41&"
+              alt="Social Anxiety illustration" />
+          </div>
+          <p class="img-caption">Social Anxiety Disorder</p>
+        </div>
+      </div>
+    </section>
+
+        <section id="disorder-2" class="full-section disorder-section" data-nav-label="MDD">
+      <div class="disorder-inner">
+        <div class="disorder-text">
+          <p class="disorder-index reveal">04</p>
+          <h2 class="disorder-title reveal delay-1">PTSD<br /></h2>
+          <span class="disorder-abbr reveal delay-2">PTSD?</span>
+          <p class="disorder-desc reveal delay-2">
+           Imagine living a normal day… and suddenly, your mind takes you back to the worst moment of your life—like it's happening again."
+          </p>
+        </div>
+        <div class="disorder-visual reveal-scale delay-2">
+          <div class="disorder-img-wrap">
+            <img src="https://i.pinimg.com/736x/58/0e/5b/580e5b43e8058374cb6231eb864f07c0.jpg"
+              alt="PTSD illustration" />
+          </div>
+          <p class="img-caption">PTSD</p>
+        </div>
+      </div>
+    </section>
+
+            <section id="disorder-2" class="full-section disorder-section" data-nav-label="MDD">
+      <div class="disorder-inner">
+        <div class="disorder-text">
+          <p class="disorder-index reveal">4.3</p>
+          <h2 class="disorder-title reveal delay-1">PTSD<br /></h2>
+          <span class="disorder-abbr reveal delay-2">What is PTSD?</span>
+          <p class="disorder-desc reveal delay-2">
+           is a condition that develops after experiencing or witnessing a traumatic event. It can be triggered by accidents, disasters, or even abusive relationships. The brain gets stuck in a constant state of alert, making it hard to feel safe, trust others, or form healthy relationships.
+          </p>
+        </div>
+        <div class="disorder-visual reveal-scale delay-2">
+          <div class="disorder-img-wrap">
+            <img src="https://daag.shoreline.edu/wp-content/uploads/2015/10/ptsd.jpg"
+              alt="PTSD illustration" />
+          </div>
+          <p class="img-caption">PTSD</p>
+        </div>
+      </div>
+    </section>
+
+                <section id="disorder-2" class="full-section disorder-section" data-nav-label="MDD">
+      <div class="disorder-inner">
+        <div class="disorder-text">
+          <p class="disorder-index reveal">4.6</p>
+          <h2 class="disorder-title reveal delay-1">PTSD<br /></h2>
+          <span class="disorder-abbr reveal delay-2">PTSD Symptoms</span>
+          <p class="disorder-desc reveal delay-2">
+shows up in three main ways: reliving the trauma through flashbacks or nightmares, avoiding anything that reminds you of it, and feeling unable to relax. These symptoms can last for months or even years, deeply affecting daily life and relationships.
+PTSD is treatable. With the right support, people can regain control over their lives.
+          </p>
+        </div>
+        <div class="disorder-visual reveal-scale delay-2">
+          <div class="disorder-img-wrap">
+            <img src="https://i.pinimg.com/736x/3f/0f/d4/3f0fd4cfa22262530c5975fb45eec632.jpg"
+              alt="PTSD illustration" />
+          </div>
+          <p class="img-caption">PTSD</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="conclusion" class="full-section" data-nav-label="End">
+      <div class="conclusion-line reveal"></div>
+      <div>
+        <p class="section-eyebrow reveal delay-1" style="text-align:center;">A final word</p>
+        <h2 class="conclusion-headline reveal delay-2">
+        Mental Health<br /><em>Matters</em>
+        </h2>
+      </div>
+      <p class="conclusion-body reveal delay-3">
+        Any Question ?
+      </p>
+    </section>
+
+
+    <section id="team" class="full-section" data-nav-label="Team">
+      <div class="team-header">
+        <div class="section-rule reveal" style="margin: 0 auto 1rem;"></div>
+        <p class="section-eyebrow reveal delay-1">Our Supercalifragilisticexpialidocious</p>
+        <h2 class="team-title reveal delay-2">Team</h2>
+      </div>
+
+      <div class="team-grid">
+
+        <article class="team-card reveal delay-1">
+          <div class="team-avatar-wrap">
+            <img
+              src="https://i.pinimg.com/736x/0e/ee/9b/0eee9bfaf9217cacbc7aa387b6f07bb9.jpg"
+              alt="Team Member 1 headshot" />
+          </div>
+          <h3 class="team-name">Abdelrahman Khaled</h3>
+          <p class="team-contrib">Sleeping</p>
+        </article>
+
+        <article class="team-card reveal delay-2">
+          <div class="team-avatar-wrap">
+            <img src="https://i.pinimg.com/736x/38/20/35/3820353e0982d3558230aee9b10970ac.jpg"
+              alt="Team Member 2 headshot" />
+          </div>
+          <h3 class="team-name">Nouredden Hisham</h3>
+          <p class="team-contrib">Existing ✨</p>
+        </article>
+
+        <article class="team-card reveal delay-3">
+          <div class="team-avatar-wrap">
+            <img src="https://i.pinimg.com/736x/da/f4/2b/daf42b642a397cef3d183e526aabe753.jpg"
+              alt="Team Member 3 headshot" />
+          </div>
+          <h3 class="team-name">Ahmad Rageb</h3>
+          <p class="team-contrib">F.O.U.C.S.I.N.G</p>
+        </article>
+
+        <article class="team-card reveal delay-4">
+          <div class="team-avatar-wrap">
+            <img src="https://i.pinimg.com/736x/50/b2/4d/50b24d1d9633d5aa5bf734eb4f8317b6.jpg"
+              alt="Team Member 4 headshot" />
+          </div>
+          <h3 class="team-name">Hisham Aymen</h3>
+          <p class="team-contrib">Sleeping</p>
+        </article>
+
+        <article class="team-card reveal delay-5">
+          <div class="team-avatar-wrap">
+            <img
+              src="https://cdn.discordapp.com/attachments/1442424846716899378/1499248627762069687/7699fc90-def2-4b82-ae69-14b89b05cbfd.png?ex=69f41b97&is=69f2ca17&hm=031dcbd548b303a517342f4dc748a097f5aa3139cccd835513ce9cedfcf25f10&"
+              alt="Team Member 5 headshot" />
+          </div>
+          <h3 class="team-name">Yahya Safwat</h3>
+          <p class="team-contrib">Gaming</p>
+        </article>
+
+        <article class="team-card reveal delay-1">
+          <div class="team-avatar-wrap">
+            <img src="https://i.pinimg.com/736x/93/ad/cf/93adcfbd28a79678c18d7e78ad2bb666.jpg"
+              alt="Team Member 1 headshot" />
+          </div>
+          <h3 class="team-name">Bassem Abdo</h3>
+          <p class="team-contrib">Overcoming</p>
+        </article>
+        <p class="footer-sig" style="color: white">Developed by 
+          <span style="color: rgb(126 185 238);">Abdelrahman Khaled.</span></p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
